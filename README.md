@@ -60,7 +60,7 @@ StadiumIQ centralises it all into **one GenAI assistant** that turns Generative 
 
 ## 🚀 Live Demo
 
-**→ [gen-gpee.onrender.com](https://gen-gpee.onrender.com)**
+**→ [https://stadiumiq-2026.onrender.com/](https://stadiumiq-2026.onrender.com)**
 
 - The badge in the top-right reads **“AI: offline ⓘ”** — this is **intentional**: it runs the fully-functional offline engine (no API key needed). Hover it for details.
 - ⏳ _Hosted on Render's free tier, which sleeps after ~15 min idle — the **first** load can take ~50s to wake. It's fast after that._
@@ -82,7 +82,7 @@ Every capability area from the brief, implemented as a working, tested feature:
 |  9  | 🌐 **Translation**                | On-demand translation for staff & fans                                   | `POST /api/translate`                |
 | ♿  | **Accessibility**                 | Accessible routing **and** a WCAG-2.1-AA, keyboard-navigable UI          | _cross-cutting_                      |
 
-Coverage is even **machine-verifiable** at [`GET /api/capabilities`](https://gen-gpee.onrender.com/api/capabilities) and asserted by tests. Full matrix → [`docs/ALIGNMENT.md`](docs/ALIGNMENT.md).
+Coverage is even **machine-verifiable** at [`GET /api/capabilities`](https://stadiumiq-2026.onrender.com/api/capabilities) and asserted by tests. Full matrix → [`docs/ALIGNMENT.md`](docs/ALIGNMENT.md).
 
 ## 🎬 Walkthrough
 
@@ -223,7 +223,7 @@ docker run -p 3000:3000 -e NODE_ENV=production stadiumiq
 </div>
 
 ```bash
-curl -X POST https://gen-gpee.onrender.com/api/incident \
+curl -X POST https://stadiumiq-2026.onrender.com/api/incident \
   -H 'content-type: application/json' \
   -d '{"venueId":"usa-metlife","type":"crowd-surge","severity":"high","zone":"East Gate"}'
 ```
