@@ -1,0 +1,324 @@
+{
+  "tournament": {
+    "name": "FIFA World Cup 2026",
+    "hosts": ["United States", "Canada", "Mexico"],
+    "dates": "June 11 – July 19, 2026",
+    "teams": 48,
+    "matches": 104
+  },
+  "venues": [
+    {
+      "id": "mex-azteca",
+      "name": "Estadio Azteca",
+      "city": "Mexico City",
+      "country": "Mexico",
+      "capacity": 87523,
+      "timezone": "America/Mexico_City",
+      "languages": ["es", "en"],
+      "role": "Opening match",
+      "amenities": ["first-aid", "family-zone", "prayer-room", "charging", "atm"]
+    },
+    {
+      "id": "usa-metlife",
+      "name": "MetLife Stadium",
+      "city": "East Rutherford, NJ",
+      "country": "United States",
+      "capacity": 82500,
+      "timezone": "America/New_York",
+      "languages": ["en", "es"],
+      "role": "Final",
+      "amenities": ["first-aid", "sensory-room", "family-zone", "charging", "atm", "nursing-room"]
+    },
+    {
+      "id": "usa-att",
+      "name": "AT&T Stadium",
+      "city": "Arlington, TX",
+      "country": "United States",
+      "capacity": 80000,
+      "timezone": "America/Chicago",
+      "languages": ["en", "es"],
+      "role": "Semi-final",
+      "amenities": ["first-aid", "sensory-room", "family-zone", "charging", "atm"]
+    },
+    {
+      "id": "usa-sofi",
+      "name": "SoFi Stadium",
+      "city": "Inglewood, CA",
+      "country": "United States",
+      "capacity": 70240,
+      "timezone": "America/Los_Angeles",
+      "languages": ["en", "es"],
+      "role": "Group stage & knockout",
+      "amenities": ["first-aid", "sensory-room", "family-zone", "charging", "nursing-room"]
+    },
+    {
+      "id": "usa-lumen",
+      "name": "Lumen Field",
+      "city": "Seattle, WA",
+      "country": "United States",
+      "capacity": 68740,
+      "timezone": "America/Los_Angeles",
+      "languages": ["en", "es"],
+      "role": "Group stage & knockout",
+      "amenities": ["first-aid", "family-zone", "charging", "atm"]
+    },
+    {
+      "id": "usa-levis",
+      "name": "Levi's Stadium",
+      "city": "Santa Clara, CA",
+      "country": "United States",
+      "capacity": 68500,
+      "timezone": "America/Los_Angeles",
+      "languages": ["en", "es"],
+      "role": "Group stage & knockout",
+      "amenities": ["first-aid", "sensory-room", "family-zone", "charging"]
+    },
+    {
+      "id": "usa-gillette",
+      "name": "Gillette Stadium",
+      "city": "Foxborough, MA",
+      "country": "United States",
+      "capacity": 65878,
+      "timezone": "America/New_York",
+      "languages": ["en", "es"],
+      "role": "Group stage & knockout",
+      "amenities": ["first-aid", "family-zone", "charging", "atm"]
+    },
+    {
+      "id": "usa-linc",
+      "name": "Lincoln Financial Field",
+      "city": "Philadelphia, PA",
+      "country": "United States",
+      "capacity": 69796,
+      "timezone": "America/New_York",
+      "languages": ["en", "es"],
+      "role": "Group stage & knockout",
+      "amenities": ["first-aid", "sensory-room", "family-zone", "charging"]
+    },
+    {
+      "id": "usa-mbs",
+      "name": "Mercedes-Benz Stadium",
+      "city": "Atlanta, GA",
+      "country": "United States",
+      "capacity": 71000,
+      "timezone": "America/New_York",
+      "languages": ["en", "es"],
+      "role": "Semi-final",
+      "amenities": ["first-aid", "sensory-room", "family-zone", "charging", "atm", "nursing-room"]
+    },
+    {
+      "id": "usa-hardrock",
+      "name": "Hard Rock Stadium",
+      "city": "Miami Gardens, FL",
+      "country": "United States",
+      "capacity": 65326,
+      "timezone": "America/New_York",
+      "languages": ["en", "es"],
+      "role": "Third-place play-off",
+      "amenities": ["first-aid", "family-zone", "charging", "atm"]
+    },
+    {
+      "id": "usa-nrg",
+      "name": "NRG Stadium",
+      "city": "Houston, TX",
+      "country": "United States",
+      "capacity": 72220,
+      "timezone": "America/Chicago",
+      "languages": ["en", "es"],
+      "role": "Group stage & knockout",
+      "amenities": ["first-aid", "sensory-room", "family-zone", "charging"]
+    },
+    {
+      "id": "usa-arrowhead",
+      "name": "Arrowhead Stadium",
+      "city": "Kansas City, MO",
+      "country": "United States",
+      "capacity": 76416,
+      "timezone": "America/Chicago",
+      "languages": ["en", "es"],
+      "role": "Group stage & knockout",
+      "amenities": ["first-aid", "family-zone", "charging", "atm"]
+    },
+    {
+      "id": "can-bmo",
+      "name": "BMO Field",
+      "city": "Toronto",
+      "country": "Canada",
+      "capacity": 45500,
+      "timezone": "America/Toronto",
+      "languages": ["en", "fr"],
+      "role": "Group stage & knockout",
+      "amenities": ["first-aid", "family-zone", "charging", "atm"]
+    },
+    {
+      "id": "can-bcplace",
+      "name": "BC Place",
+      "city": "Vancouver",
+      "country": "Canada",
+      "capacity": 54500,
+      "timezone": "America/Vancouver",
+      "languages": ["en", "fr"],
+      "role": "Group stage & knockout",
+      "amenities": ["first-aid", "sensory-room", "family-zone", "charging", "nursing-room"]
+    },
+    {
+      "id": "mex-akron",
+      "name": "Estadio Akron",
+      "city": "Guadalajara",
+      "country": "Mexico",
+      "capacity": 48071,
+      "timezone": "America/Mexico_City",
+      "languages": ["es", "en"],
+      "role": "Group stage & knockout",
+      "amenities": ["first-aid", "family-zone", "prayer-room", "charging"]
+    },
+    {
+      "id": "mex-bbva",
+      "name": "Estadio BBVA",
+      "city": "Monterrey",
+      "country": "Mexico",
+      "capacity": 53500,
+      "timezone": "America/Monterrey",
+      "languages": ["es", "en"],
+      "role": "Group stage & knockout",
+      "amenities": ["first-aid", "family-zone", "prayer-room", "charging", "atm"]
+    }
+  ],
+  "zones": {
+    "usa-metlife": {
+      "nodes": [
+        { "id": "gate-a", "label": "Gate A (North)", "type": "entrance", "level": 0 },
+        { "id": "gate-c", "label": "Gate C (East)", "type": "entrance", "level": 0 },
+        { "id": "concourse-lower", "label": "Lower Concourse", "type": "concourse", "level": 1 },
+        { "id": "concourse-upper", "label": "Upper Concourse", "type": "concourse", "level": 3 },
+        { "id": "sec-115", "label": "Section 115", "type": "seating", "level": 1 },
+        { "id": "sec-320", "label": "Section 320", "type": "seating", "level": 3 },
+        {
+          "id": "restroom-1",
+          "label": "Restroom (Lower, near 115)",
+          "type": "restroom",
+          "level": 1
+        },
+        { "id": "food-1", "label": "Food Court (Lower)", "type": "food", "level": 1 },
+        { "id": "firstaid-1", "label": "First Aid Station", "type": "first-aid", "level": 1 },
+        { "id": "sensory-1", "label": "Sensory Room", "type": "sensory-room", "level": 1 },
+        { "id": "elevator-1", "label": "Accessible Elevator", "type": "elevator", "level": 0 }
+      ],
+      "edges": [
+        { "from": "gate-a", "to": "concourse-lower", "distance": 60, "accessible": true },
+        { "from": "gate-c", "to": "concourse-lower", "distance": 80, "accessible": true },
+        { "from": "concourse-lower", "to": "sec-115", "distance": 40, "accessible": true },
+        { "from": "concourse-lower", "to": "restroom-1", "distance": 25, "accessible": true },
+        { "from": "concourse-lower", "to": "food-1", "distance": 35, "accessible": true },
+        { "from": "concourse-lower", "to": "firstaid-1", "distance": 30, "accessible": true },
+        { "from": "concourse-lower", "to": "sensory-1", "distance": 45, "accessible": true },
+        { "from": "concourse-lower", "to": "elevator-1", "distance": 20, "accessible": true },
+        { "from": "elevator-1", "to": "concourse-upper", "distance": 15, "accessible": true },
+        { "from": "concourse-upper", "to": "sec-320", "distance": 40, "accessible": true },
+        {
+          "from": "concourse-lower",
+          "to": "concourse-upper",
+          "distance": 70,
+          "accessible": false,
+          "note": "stairs only"
+        }
+      ]
+    },
+    "usa-sofi": {
+      "nodes": [
+        {
+          "id": "gate-1",
+          "label": "Entry Gate 1 (American Airlines Plaza)",
+          "type": "entrance",
+          "level": 0
+        },
+        {
+          "id": "gate-3",
+          "label": "Entry Gate 3 (Via Toll Plaza)",
+          "type": "entrance",
+          "level": 0
+        },
+        { "id": "concourse", "label": "Main Concourse", "type": "concourse", "level": 1 },
+        { "id": "sec-201", "label": "Section 201", "type": "seating", "level": 1 },
+        { "id": "sec-501", "label": "Section 501 (Upper)", "type": "seating", "level": 5 },
+        {
+          "id": "restroom",
+          "label": "Restroom (near Section 201)",
+          "type": "restroom",
+          "level": 1
+        },
+        { "id": "food", "label": "Food Hall", "type": "food", "level": 1 },
+        { "id": "firstaid", "label": "First Aid", "type": "first-aid", "level": 1 },
+        { "id": "sensory", "label": "Sensory Room", "type": "sensory-room", "level": 1 },
+        { "id": "nursing", "label": "Nursing Room", "type": "nursing-room", "level": 1 },
+        { "id": "elevator", "label": "Accessible Elevator", "type": "elevator", "level": 0 }
+      ],
+      "edges": [
+        { "from": "gate-1", "to": "concourse", "distance": 55, "accessible": true },
+        { "from": "gate-3", "to": "concourse", "distance": 70, "accessible": true },
+        { "from": "concourse", "to": "sec-201", "distance": 45, "accessible": true },
+        { "from": "concourse", "to": "restroom", "distance": 20, "accessible": true },
+        { "from": "concourse", "to": "food", "distance": 30, "accessible": true },
+        { "from": "concourse", "to": "firstaid", "distance": 35, "accessible": true },
+        { "from": "concourse", "to": "sensory", "distance": 50, "accessible": true },
+        { "from": "concourse", "to": "nursing", "distance": 48, "accessible": true },
+        { "from": "concourse", "to": "elevator", "distance": 25, "accessible": true },
+        { "from": "elevator", "to": "sec-501", "distance": 30, "accessible": true },
+        {
+          "from": "concourse",
+          "to": "sec-501",
+          "distance": 90,
+          "accessible": false,
+          "note": "escalator/stairs"
+        }
+      ]
+    },
+    "mex-azteca": {
+      "nodes": [
+        { "id": "puerta-1", "label": "Puerta 1 (Norte)", "type": "entrance", "level": 0 },
+        { "id": "puerta-8", "label": "Puerta 8 (Sur)", "type": "entrance", "level": 0 },
+        {
+          "id": "explanada",
+          "label": "Explanada / Main Concourse",
+          "type": "concourse",
+          "level": 1
+        },
+        { "id": "sec-general", "label": "Cabecera Sur (Section)", "type": "seating", "level": 1 },
+        { "id": "sec-palcos", "label": "Palcos (Upper)", "type": "seating", "level": 3 },
+        { "id": "sanitarios", "label": "Sanitarios (Restroom)", "type": "restroom", "level": 1 },
+        { "id": "comida", "label": "Zona de Comida (Food)", "type": "food", "level": 1 },
+        {
+          "id": "primeros-auxilios",
+          "label": "Primeros Auxilios (First Aid)",
+          "type": "first-aid",
+          "level": 1
+        },
+        {
+          "id": "oracion",
+          "label": "Sala de Oración (Prayer Room)",
+          "type": "prayer-room",
+          "level": 1
+        },
+        { "id": "elevador", "label": "Elevador Accesible", "type": "elevator", "level": 0 }
+      ],
+      "edges": [
+        { "from": "puerta-1", "to": "explanada", "distance": 65, "accessible": true },
+        { "from": "puerta-8", "to": "explanada", "distance": 75, "accessible": true },
+        { "from": "explanada", "to": "sec-general", "distance": 40, "accessible": true },
+        { "from": "explanada", "to": "sanitarios", "distance": 25, "accessible": true },
+        { "from": "explanada", "to": "comida", "distance": 30, "accessible": true },
+        { "from": "explanada", "to": "primeros-auxilios", "distance": 35, "accessible": true },
+        { "from": "explanada", "to": "oracion", "distance": 45, "accessible": true },
+        { "from": "explanada", "to": "elevador", "distance": 22, "accessible": true },
+        { "from": "elevador", "to": "sec-palcos", "distance": 28, "accessible": true },
+        {
+          "from": "explanada",
+          "to": "sec-palcos",
+          "distance": 80,
+          "accessible": false,
+          "note": "stairs only"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "note": "Representative sample of FIFA World Cup 2026 fixtures for demonstration. Kickoff times are illustrative.",
+  "matches": [
+    {
+      "id": "m1",
+      "stage": "Group A",
+      "home": "Mexico",
+      "away": "TBD",
+      "venueId": "mex-azteca",
+      "kickoff": "2026-06-11T20:00:00-06:00"
+    },
+    {
+      "id": "m2",
+      "stage": "Group D",
+      "home": "USA",
+      "away": "TBD",
+      "venueId": "usa-sofi",
+      "kickoff": "2026-06-12T18:00:00-07:00"
+    },
+    {
+      "id": "m3",
+      "stage": "Group B",
+      "home": "Canada",
+      "away": "TBD",
+      "venueId": "can-bcplace",
+      "kickoff": "2026-06-13T16:00:00-07:00"
+    },
+    {
+      "id": "m4",
+      "stage": "Group E",
+      "home": "TBD",
+      "away": "TBD",
+      "venueId": "usa-metlife",
+      "kickoff": "2026-06-14T15:00:00-04:00"
+    },
+    {
+      "id": "m5",
+      "stage": "Group C",
+      "home": "TBD",
+      "away": "TBD",
+      "venueId": "usa-att",
+      "kickoff": "2026-06-15T19:00:00-05:00"
+    },
+    {
+      "id": "m6",
+      "stage": "Round of 32",
+      "home": "TBD",
+      "away": "TBD",
+      "venueId": "usa-mbs",
+      "kickoff": "2026-06-29T18:00:00-04:00"
+    },
+    {
+      "id": "m7",
+      "stage": "Quarter-final",
+      "home": "TBD",
+      "away": "TBD",
+      "venueId": "usa-sofi",
+      "kickoff": "2026-07-10T17:00:00-07:00"
+    },
+    {
+      "id": "m8",
+      "stage": "Semi-final",
+      "home": "TBD",
+      "away": "TBD",
+      "venueId": "usa-att",
+      "kickoff": "2026-07-14T19:00:00-05:00"
+    },
+    {
+      "id": "m9",
+      "stage": "Final",
+      "home": "TBD",
+      "away": "TBD",
+      "venueId": "usa-metlife",
+      "kickoff": "2026-07-19T15:00:00-04:00"
+    }
+  ]
+}

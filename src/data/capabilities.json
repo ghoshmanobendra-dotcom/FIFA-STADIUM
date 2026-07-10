@@ -1,0 +1,92 @@
+{
+  "personas": [
+    { "id": "fans", "label": "Fans" },
+    { "id": "organizers", "label": "Organizers" },
+    { "id": "volunteers", "label": "Volunteers" },
+    { "id": "venue-staff", "label": "Venue staff" }
+  ],
+  "problemStatementAreas": [
+    "navigation",
+    "crowd-management",
+    "accessibility",
+    "transportation",
+    "sustainability",
+    "multilingual-assistance",
+    "operational-intelligence",
+    "real-time-decision-support"
+  ],
+  "capabilities": [
+    {
+      "id": "concierge",
+      "title": "Multilingual fan concierge",
+      "endpoint": "POST /api/concierge",
+      "areas": ["multilingual-assistance", "accessibility"],
+      "personas": ["fans"],
+      "genai": "RAG-grounded natural-language answers in 10 languages"
+    },
+    {
+      "id": "navigation",
+      "title": "In-stadium wayfinding",
+      "endpoint": "POST /api/navigate",
+      "areas": ["navigation", "accessibility"],
+      "personas": ["fans", "volunteers"],
+      "genai": "Turn-by-turn directions authored from a shortest-path route"
+    },
+    {
+      "id": "crowd",
+      "title": "Crowd & operational intelligence",
+      "endpoint": "GET /api/crowd/:venueId",
+      "areas": ["crowd-management", "operational-intelligence"],
+      "personas": ["organizers", "venue-staff"],
+      "genai": "Prioritised control-room recommendations from live density"
+    },
+    {
+      "id": "incident",
+      "title": "Real-time incident triage",
+      "endpoint": "POST /api/incident",
+      "areas": ["real-time-decision-support", "operational-intelligence"],
+      "personas": ["venue-staff", "organizers"],
+      "genai": "Action brief over a computed priority/dispatch decision"
+    },
+    {
+      "id": "announce",
+      "title": "Multilingual PA announcements",
+      "endpoint": "POST /api/announce",
+      "areas": ["multilingual-assistance", "operational-intelligence"],
+      "personas": ["venue-staff", "organizers", "volunteers"],
+      "genai": "One message rendered into many languages at once"
+    },
+    {
+      "id": "briefing",
+      "title": "Volunteer & staff shift briefing",
+      "endpoint": "POST /api/briefing",
+      "areas": ["operational-intelligence"],
+      "personas": ["volunteers", "venue-staff"],
+      "genai": "Role-specific briefing: duties, locations, escalation, phrases"
+    },
+    {
+      "id": "sustainability",
+      "title": "Green travel & carbon footprint",
+      "endpoint": "POST /api/sustainability/footprint",
+      "areas": ["sustainability", "transportation"],
+      "personas": ["fans", "organizers"],
+      "genai": "Encouraging nudge over a ranked footprint comparison"
+    },
+    {
+      "id": "plan",
+      "title": "Smart match-day plan",
+      "endpoint": "GET /api/plan/:venueId",
+      "areas": ["transportation"],
+      "personas": ["fans"],
+      "genai": "Personalised arrival plan from the fixture schedule"
+    },
+    {
+      "id": "translate",
+      "title": "On-demand translation",
+      "endpoint": "POST /api/translate",
+      "areas": ["multilingual-assistance"],
+      "personas": ["fans", "volunteers", "venue-staff"],
+      "genai": "Faithful translation of any message or announcement"
+    }
+  ]
+}

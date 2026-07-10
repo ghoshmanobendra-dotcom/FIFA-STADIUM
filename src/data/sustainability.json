@@ -1,0 +1,54 @@
+{
+  "note": "Illustrative per-passenger emission factors in grams of CO2-equivalent per kilometre. Sourced from typical published transport-mode averages and rounded for guidance; not for regulatory reporting.",
+  "modes": [
+    {
+      "id": "walk",
+      "label": "Walk / wheelchair",
+      "gramsCO2ePerKm": 0,
+      "occupancyNote": "zero-emission"
+    },
+    { "id": "bike", "label": "Bicycle", "gramsCO2ePerKm": 0, "occupancyNote": "zero-emission" },
+    {
+      "id": "metro",
+      "label": "Metro / light rail",
+      "gramsCO2ePerKm": 35,
+      "occupancyNote": "per passenger"
+    },
+    {
+      "id": "train",
+      "label": "Commuter train",
+      "gramsCO2ePerKm": 41,
+      "occupancyNote": "per passenger"
+    },
+    {
+      "id": "bus",
+      "label": "Match-day shuttle bus",
+      "gramsCO2ePerKm": 68,
+      "occupancyNote": "per passenger"
+    },
+    {
+      "id": "rideshare",
+      "label": "Rideshare / taxi",
+      "gramsCO2ePerKm": 170,
+      "occupancyNote": "per passenger, avg occupancy"
+    },
+    {
+      "id": "car",
+      "label": "Private car (solo)",
+      "gramsCO2ePerKm": 192,
+      "occupancyNote": "per vehicle"
+    },
+    {
+      "id": "carpool",
+      "label": "Carpool (4 people)",
+      "gramsCO2ePerKm": 48,
+      "occupancyNote": "per passenger"
+    }
+  ],
+  "tips": [
+    "Choosing transit or the official shuttle over driving solo is the single biggest way to cut match-day emissions.",
+    "Bring an empty reusable bottle and use free refill stations instead of buying single-use plastic.",
+    "Use colour-coded recycling and compost bins on every concourse.",
+    "Carpooling with three others roughly quarters your per-person travel footprint versus driving alone."
+  ]
+}

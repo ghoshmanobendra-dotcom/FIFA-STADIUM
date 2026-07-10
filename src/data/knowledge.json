@@ -1,0 +1,111 @@
+{
+  "entries": [
+    {
+      "id": "tickets",
+      "topic": "tickets",
+      "keywords": ["ticket", "entry", "qr", "boleto", "billet", "mobile ticket", "scan"],
+      "answer": "Tickets for FIFA World Cup 2026 are digital. Add your mobile ticket to your phone wallet before arriving, keep screen brightness high, and have the QR code ready at your assigned gate. Screenshots are not accepted — the QR rotates for security."
+    },
+    {
+      "id": "gates",
+      "topic": "entry",
+      "keywords": ["gate", "entrance", "enter", "puerta", "porte", "security", "bag"],
+      "answer": "Gates open 3 hours before kickoff. Use the gate printed on your ticket to avoid long transfers. A clear-bag policy is in force: only bags up to 30cm x 15cm x 15cm are allowed. Arrive early — security screening peaks 60 minutes before kickoff."
+    },
+    {
+      "id": "accessibility",
+      "topic": "accessibility",
+      "keywords": [
+        "accessible",
+        "wheelchair",
+        "disability",
+        "sensory",
+        "hearing",
+        "vision",
+        "companion",
+        "ada",
+        "step-free"
+      ],
+      "answer": "Every venue offers step-free routes, accessible seating, companion seats, and elevators. Sensory rooms and noise-cancelling kits are available for guests with sensory sensitivities. Audio-descriptive commentary headsets can be collected at Guest Services near the main gate. Ask staff in a purple vest for assistance at any time."
+    },
+    {
+      "id": "transport",
+      "topic": "transportation",
+      "keywords": [
+        "transport",
+        "parking",
+        "train",
+        "metro",
+        "bus",
+        "shuttle",
+        "uber",
+        "drive",
+        "transit",
+        "rideshare"
+      ],
+      "answer": "Public transit is strongly recommended — dedicated match-day shuttles and extended metro/train services run to every venue. Rideshare pick-up/drop-off is at signposted lots away from pedestrian gates. If you must drive, pre-book parking; walk-up parking is extremely limited and roads close near the stadium 2 hours before kickoff."
+    },
+    {
+      "id": "food",
+      "topic": "food",
+      "keywords": [
+        "food",
+        "eat",
+        "drink",
+        "restaurant",
+        "hungry",
+        "vegan",
+        "halal",
+        "kosher",
+        "comida",
+        "concession"
+      ],
+      "answer": "Concourses have concessions on every level with vegetarian, vegan, halal and gluten-free options clearly labelled. Mobile order-ahead is available in the official app to skip lines. Free water refill stations are located next to every restroom block to reduce single-use plastic."
+    },
+    {
+      "id": "firstaid",
+      "topic": "safety",
+      "keywords": ["first aid", "medical", "hurt", "sick", "emergency", "help", "injury", "medico"],
+      "answer": "First-aid stations are on every concourse level and marked with a green cross. For emergencies, tell any steward or call the venue safety line shown on your ticket. Automated external defibrillators (AEDs) are positioned at each first-aid station and major gate."
+    },
+    {
+      "id": "family",
+      "topic": "family",
+      "keywords": ["family", "child", "kid", "baby", "nursing", "stroller", "lost child", "niño"],
+      "answer": "Family zones offer nursing rooms, baby-changing facilities and quieter seating. Register children at the Family Services desk on arrival so staff can reunite you quickly if you are separated. Ear protection for young children is available free of charge."
+    },
+    {
+      "id": "sustainability",
+      "topic": "sustainability",
+      "keywords": [
+        "recycle",
+        "sustainab",
+        "waste",
+        "green",
+        "environment",
+        "reusable",
+        "carbon",
+        "bottle"
+      ],
+      "answer": "FIFA World Cup 2026 venues run colour-coded recycling and compost stations throughout the concourses. Bring an empty reusable bottle and use the free refill stations. Choosing transit or the shuttle over driving is the single biggest way fans can cut their match-day carbon footprint."
+    },
+    {
+      "id": "weather",
+      "topic": "safety",
+      "keywords": ["weather", "rain", "heat", "hot", "sun", "shade", "storm", "hydrat"],
+      "answer": "Summer matches can be hot. Hydrate before arriving, wear sun protection, and use shaded concourse areas between halves. If severe weather is forecast, follow steward instructions and public-address announcements; play may be paused for safety."
+    },
+    {
+      "id": "wifi",
+      "topic": "connectivity",
+      "keywords": ["wifi", "wi-fi", "internet", "signal", "charge", "battery", "phone"],
+      "answer": "Free venue Wi-Fi is available under the network name shown on concourse signage. Charging lockers and USB points are on each concourse. Because your ticket is digital, top up your battery before the final whistle so you can re-enter transit gates."
+    },
+    {
+      "id": "crowd",
+      "topic": "crowd",
+      "keywords": ["crowd", "busy", "queue", "line", "wait", "exit", "leave", "avoid"],
+      "answer": "Crowds peak at the gates 45–60 minutes before kickoff and at exits during the final 5 minutes. To avoid congestion, arrive early, and if you leave promptly consider waiting 10–15 minutes in a concourse lounge for transit lines to clear. The app shows live gate and concourse density."
+    }
+  ]
+}

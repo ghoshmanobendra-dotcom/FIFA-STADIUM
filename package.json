@@ -1,0 +1,54 @@
+{
+  "name": "stadiumiq-2026",
+  "version": "1.0.0",
+  "description": "GenAI-powered Stadium Operations & Fan Experience platform for the FIFA World Cup 2026 — multilingual concierge, wayfinding, crowd/operational intelligence, accessibility and sustainability support.",
+  "type": "module",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "cross-env NODE_ENV=test node --test",
+    "test:coverage": "cross-env NODE_ENV=test node --test --experimental-test-coverage",
+    "test:watch": "cross-env NODE_ENV=test node --test --watch",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"**/*.{js,mjs,json,md,css,html}\"",
+    "format:check": "prettier --check \"src/**/*.js\" \"public/**/*.js\" \"test/**/*.js\" \"e2e/**/*.mjs\" \"scripts/**/*.mjs\" \"public/**/*.css\" \"public/**/*.html\"",
+    "test:e2e": "node e2e/a11y.mjs",
+    "bench": "NODE_ENV=production node scripts/bench.mjs",
+    "check": "npm run lint && npm run format:check && npm test"
+  },
+  "keywords": [
+    "genai",
+    "fifa-world-cup-2026",
+    "stadium-operations",
+    "accessibility",
+    "multilingual",
+    "wayfinding",
+    "crowd-management",
+    "operational-intelligence"
+  ],
+  "author": "StadiumIQ Team",
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^8.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "axe-core": "^4.12.1",
+    "cross-env": "^10.1.0",
+    "eslint": "^10.6.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.7.0",
+    "playwright-core": "^1.61.1",
+    "prettier": "^3.9.4"
+  }
+}

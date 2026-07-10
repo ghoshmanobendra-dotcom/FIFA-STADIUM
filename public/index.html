@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="StadiumIQ 2026 — GenAI stadium operations and fan experience assistant for the FIFA World Cup 2026."
+    />
+    <meta name="theme-color" content="#0b7a86" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0a1424" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <title>StadiumIQ 2026 — FIFA World Cup Fan &amp; Operations Assistant</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%E2%9A%BD%3C/text%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">⚽</span>
+        <div>
+          <h1>StadiumIQ <span class="year">2026</span></h1>
+          <p class="tagline">GenAI stadium operations &amp; fan experience</p>
+        </div>
+      </div>
+      <div class="header-controls">
+        <label for="language" class="visually-hidden-label">Language</label>
+        <select id="language" aria-label="Choose language">
+          <option value="en">English</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+          <option value="pt">Português</option>
+          <option value="de">Deutsch</option>
+          <option value="ar">العربية</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+          <option value="zh">中文</option>
+          <option value="hi">हिन्दी</option>
+        </select>
+        <span id="ai-mode" class="badge" role="status" aria-live="polite">…</span>
+      </div>
+    </header>
+
+    <nav class="tabs" role="tablist" aria-label="Assistant features">
+      <button
+        role="tab"
+        id="tab-concierge"
+        aria-controls="panel-concierge"
+        aria-selected="true"
+        class="tab"
+      >
+        Concierge
+      </button>
+      <button
+        role="tab"
+        id="tab-navigate"
+        aria-controls="panel-navigate"
+        aria-selected="false"
+        class="tab"
+        tabindex="-1"
+      >
+        Wayfinding
+      </button>
+      <button
+        role="tab"
+        id="tab-ops"
+        aria-controls="panel-ops"
+        aria-selected="false"
+        class="tab"
+        tabindex="-1"
+      >
+        Crowd &amp; Ops
+      </button>
+      <button
+        role="tab"
+        id="tab-announce"
+        aria-controls="panel-announce"
+        aria-selected="false"
+        class="tab"
+        tabindex="-1"
+      >
+        Announce
+      </button>
+      <button
+        role="tab"
+        id="tab-green"
+        aria-controls="panel-green"
+        aria-selected="false"
+        class="tab"
+        tabindex="-1"
+      >
+        Green Travel
+      </button>
+      <button
+        role="tab"
+        id="tab-plan"
+        aria-controls="panel-plan"
+        aria-selected="false"
+        class="tab"
+        tabindex="-1"
+      >
+        Match Plan
+      </button>
+      <button
+        role="tab"
+        id="tab-translate"
+        aria-controls="panel-translate"
+        aria-selected="false"
+        class="tab"
+        tabindex="-1"
+      >
+        Translate
+      </button>
+    </nav>
+
+    <main id="main">
+      <!-- Concierge -->
+      <section id="panel-concierge" role="tabpanel" aria-labelledby="tab-concierge" class="panel">
+        <h2>Ask the fan concierge</h2>
+        <p class="hint">
+          Tickets, gates, food, accessibility, transport, sustainability and more — in your
+          language.
+        </p>
+        <form id="concierge-form" class="stack">
+          <label for="concierge-venue">Venue (optional)</label>
+          <select id="concierge-venue"></select>
+          <label for="concierge-question">Your question</label>
+          <textarea
+            id="concierge-question"
+            rows="3"
+            maxlength="500"
+            required
+            placeholder="e.g. Where can I find a step-free route to my seat?"
+          ></textarea>
+          <div class="chips" id="concierge-suggestions" aria-label="Example questions"></div>
+          <button type="submit" class="primary">Ask</button>
+        </form>
+        <output id="concierge-output" class="result" aria-live="polite"></output>
+      </section>
+
+      <!-- Wayfinding -->
+      <section
+        id="panel-navigate"
+        role="tabpanel"
+        aria-labelledby="tab-navigate"
+        class="panel"
+        hidden
+      >
+        <h2>In-stadium wayfinding</h2>
+        <p class="hint">
+          Turn-by-turn directions between any two points, with a step-free option and a visual route
+          map.
+        </p>
+        <form id="navigate-form" class="stack">
+          <label for="navigate-venue">Venue</label>
+          <select id="navigate-venue" required></select>
+          <div class="row">
+            <div class="col">
+              <label for="navigate-from">From</label>
+              <select id="navigate-from" required></select>
+            </div>
+            <div class="col">
+              <label for="navigate-to">To</label>
+              <select id="navigate-to" required></select>
+            </div>
+          </div>
+          <label class="checkbox">
+            <input type="checkbox" id="navigate-accessible" />
+            Step-free (accessible) route only
+          </label>
+          <button type="submit" class="primary">Get directions</button>
+        </form>
+        <output id="navigate-output" class="result" aria-live="polite"></output>
+      </section>
+
+      <!-- Crowd & Ops console -->
+      <section id="panel-ops" role="tabpanel" aria-labelledby="tab-ops" class="panel" hidden>
+        <h2>Crowd &amp; operational intelligence</h2>
+        <p class="hint">
+          Live zone density and real-time incident decision support for staff and volunteers.
+        </p>
+        <form id="crowd-form" class="stack">
+          <label for="crowd-venue">Venue</label>
+          <select id="crowd-venue" required></select>
+          <button type="submit" class="primary">Refresh snapshot</button>
+        </form>
+        <output id="crowd-output" class="result" aria-live="polite"></output>
+
+        <hr class="divider" />
+        <h3>Log an incident (decision support)</h3>
+        <form id="incident-form" class="stack">
+          <div class="row">
+            <div class="col">
+              <label for="incident-type">Type</label>
+              <select id="incident-type"></select>
+            </div>
+            <div class="col">
+              <label for="incident-severity">Severity</label>
+              <select id="incident-severity"></select>
+            </div>
+          </div>
+          <label for="incident-zone">Zone / location</label>
+          <input type="text" id="incident-zone" maxlength="80" placeholder="e.g. East Gate" />
+          <label for="incident-detail">Detail (optional)</label>
+          <textarea
+            id="incident-detail"
+            rows="2"
+            maxlength="500"
+            placeholder="Brief description"
+          ></textarea>
+          <button type="submit" class="primary">Triage incident</button>
+        </form>
+        <output id="incident-output" class="result" aria-live="assertive"></output>
+
+        <hr class="divider" />
+        <h3>Volunteer &amp; staff shift briefing</h3>
+        <form id="briefing-form" class="stack">
+          <div class="row">
+            <div class="col">
+              <label for="briefing-role">Role</label>
+              <select id="briefing-role"></select>
+            </div>
+            <div class="col">
+              <label for="briefing-shift">Shift (optional)</label>
+              <input type="text" id="briefing-shift" maxlength="40" placeholder="e.g. Kickoff" />
+            </div>
+          </div>
+          <label for="briefing-zone">Zone (optional)</label>
+          <input type="text" id="briefing-zone" maxlength="80" placeholder="e.g. East Gate" />
+          <button type="submit" class="primary">Generate briefing</button>
+        </form>
+        <output id="briefing-output" class="result" aria-live="polite"></output>
+      </section>
+
+      <!-- Announce -->
+      <section
+        id="panel-announce"
+        role="tabpanel"
+        aria-labelledby="tab-announce"
+        class="panel"
+        hidden
+      >
+        <h2>Multilingual PA announcements</h2>
+        <p class="hint">
+          Broadcast a clear, consistent message to a global crowd in many languages at once.
+        </p>
+        <form id="announce-form" class="stack">
+          <label for="announce-scenario">Scenario</label>
+          <select id="announce-scenario"></select>
+          <label for="announce-message">Or write a custom message</label>
+          <textarea
+            id="announce-message"
+            rows="2"
+            maxlength="500"
+            placeholder="Leave blank to use the scenario above"
+          ></textarea>
+          <fieldset class="langset">
+            <legend>Languages</legend>
+            <div id="announce-langs" class="chips"></div>
+          </fieldset>
+          <button type="submit" class="primary">Generate announcement</button>
+        </form>
+        <output id="announce-output" class="result" aria-live="polite"></output>
+      </section>
+
+      <!-- Green Travel -->
+      <section id="panel-green" role="tabpanel" aria-labelledby="tab-green" class="panel" hidden>
+        <h2>Green travel &amp; carbon footprint</h2>
+        <p class="hint">
+          Compare travel options for your trip to the stadium and see the greenest choice.
+        </p>
+        <form id="green-form" class="stack">
+          <div class="row">
+            <div class="col">
+              <label for="green-distance">Distance (km)</label>
+              <input type="number" id="green-distance" min="1" max="2000" value="20" required />
+            </div>
+            <div class="col">
+              <label for="green-party">Party size</label>
+              <input type="number" id="green-party" min="1" max="20" value="2" required />
+            </div>
+          </div>
+          <button type="submit" class="primary">Compare footprint</button>
+        </form>
+        <output id="green-output" class="result" aria-live="polite"></output>
+      </section>
+
+      <!-- Match Plan -->
+      <section id="panel-plan" role="tabpanel" aria-labelledby="tab-plan" class="panel" hidden>
+        <h2>Smart match-day plan</h2>
+        <p class="hint">Get a personalised arrival plan for the next fixture at your venue.</p>
+        <form id="plan-form" class="stack">
+          <label for="plan-venue">Venue</label>
+          <select id="plan-venue" required></select>
+          <label for="plan-travel">Your journey time (minutes)</label>
+          <input type="number" id="plan-travel" min="0" max="480" value="45" />
+          <button type="submit" class="primary">Build my plan</button>
+        </form>
+        <output id="plan-output" class="result" aria-live="polite"></output>
+      </section>
+
+      <!-- Translate -->
+      <section
+        id="panel-translate"
+        role="tabpanel"
+        aria-labelledby="tab-translate"
+        class="panel"
+        hidden
+      >
+        <h2>Multilingual assistance</h2>
+        <p class="hint">Translate any announcement or message for a fan or volunteer.</p>
+        <form id="translate-form" class="stack">
+          <label for="translate-text">Text</label>
+          <textarea
+            id="translate-text"
+            rows="3"
+            maxlength="500"
+            required
+            placeholder="e.g. Gate C is now open for accessible entry."
+          ></textarea>
+          <label for="translate-target">Translate to</label>
+          <select id="translate-target"></select>
+          <button type="submit" class="primary">Translate</button>
+        </form>
+        <output id="translate-output" class="result" aria-live="polite"></output>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        StadiumIQ 2026 · Built for the FIFA World Cup 2026 across
+        <abbr title="United States, Canada and Mexico">USA · Canada · Mexico</abbr>. Runs with or
+        without a live AI model. ·
+        <a href="/api/openapi.json">API</a>
+      </p>
+    </footer>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
